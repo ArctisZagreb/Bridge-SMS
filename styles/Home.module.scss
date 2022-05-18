@@ -1,0 +1,13 @@
+@import "./globals/COLORS.scss";
+@import "./globals/FONTS.scss";
+.home {
+  display: flex;
+}
+.image-container {
+  width: 100%;
+  margin: 1rem 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

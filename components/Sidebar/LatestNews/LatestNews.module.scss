@@ -1,0 +1,26 @@
+@import "./../../../styles/globals/COLORS.scss";
+@import "./../../../styles/globals/FONTS.scss";
+
+.latest-news {
+  margin-bottom: 1rem;
+}
+
+.latest-news__news-list {
+  margin: 1rem 0;
+}
+
+.news-item {
+  border-bottom: 1px solid $secondary-600;
+  margin-bottom: 1rem;
+  a {
+    text-decoration: underline;
+
+    color: $secondary-600;
+  }
+  .date {
+    margin-top: 0.3rem;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-md;
+    color: $secondary-600;
+  }
+}

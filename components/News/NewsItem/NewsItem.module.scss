@@ -1,0 +1,34 @@
+@import "./../../../styles/globals/FONTS.scss";
+@import "./../../../styles/globals/COLORS.scss";
+
+.news-item {
+  margin-bottom: 2rem;
+  h1 {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+.news-item__published {
+  display: flex;
+  font-style: italic;
+  font-size: $font-size-md;
+  color: $font-primary;
+  margin-bottom: 0.2rem;
+  time {
+    margin: 0 0.2rem;
+  }
+  .separator {
+    margin: 0 0.2rem;
+  }
+  .author {
+    margin: 0;
+  }
+}
+.news-item__short {
+  font-size: $font-size-md;
+  color: $font-primary;
+}
+.news-item__short__link {
+  color: $primary-500;
+  text-decoration: underline;
+}

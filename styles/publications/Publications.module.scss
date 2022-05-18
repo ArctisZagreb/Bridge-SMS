@@ -1,0 +1,22 @@
+@import "./../globals/COLORS.scss";
+@import "./../globals/FONTS.scss";
+
+.review-container {
+  margin: 1rem 0;
+  border-bottom: 1px solid $secondary-500;
+}
+
+.title {
+  font-size: $font-size-md;
+  font-weight: 700;
+  line-height: 18px;
+  color: $font-primary;
+}
+.address-time {
+  font-style: italic;
+  font-size: $font-size-md;
+  line-height: 18px;
+  font-weight: 400;
+  color: $font-primary;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,61 @@
+@import "./../../../styles/globals/COLORS.scss";
+@import "./../../../styles/globals/FONTS.scss";
+.table-container {
+  font-weight: 400;
+}
+.table {
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+  color: $font-primary;
+  thead {
+    height: 60px;
+    width: 100%;
+    background: $primary-200;
+
+    th {
+      position: relative;
+      font-weight: 700;
+      &:hover {
+        background: $primary-300;
+      }
+    }
+  }
+
+  th {
+    font-weight: 400;
+    font-size: $font-size-md;
+    padding: 0 0.3rem;
+  }
+}
+
+.table-body {
+  tr {
+    color: $font-primary;
+    height: 35px;
+    font-size: $font-size-md;
+  }
+  .main-row {
+    &:nth-child(even) {
+      background: $secondary-400;
+    }
+    &:hover {
+      background: $secondary-500;
+    }
+    td {
+      vertical-align: top;
+      padding: 8px;
+    }
+  }
+}
+
+.sort-icon {
+  position: absolute;
+  right: 6px;
+  font-size: 16px;
+  text-align: right;
+}
+.sorted-row {
+  background: $primary-300;
+}

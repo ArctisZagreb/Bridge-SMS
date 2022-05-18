@@ -1,0 +1,21 @@
+@import "./../../styles/globals/COLORS.scss";
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  background-color: $secondary-300;
+  box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.left-side-container {
+  width: 75%;
+  background-color: $secondary-300;
+  padding: 1rem;
+}
+
+.right-side-container {
+  width: 25%;
+  background-color: $secondary-300;
+  padding: 0 0.4rem;
+}
