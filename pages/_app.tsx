@@ -1,4 +1,4 @@
-import "../styles/globals/_index.scss";
+import "../styles/globals/_index.css";
 import type { AppProps } from "next/app";
 import styles from "./../styles/Root.module.scss";
 import { Container } from "../components/Container/Container";
