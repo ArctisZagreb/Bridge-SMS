@@ -8,6 +8,7 @@ export const MarieAction = () => {
       <SideBarTitle>Marie Sklodowska-Curie action</SideBarTitle>
       <div className={styles["marie-action__content"]}>
         <a
+          rel="noreferrer"
           href="https://marie-sklodowska-curie-actions.ec.europa.eu/"
           target="_blank"
         >

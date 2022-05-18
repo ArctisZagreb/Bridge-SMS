@@ -1,9 +1,6 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import { Container } from "../components/Container/Container";
 import { LeftSideContainer } from "../components/Container/LeftSideContainer";
 import { RightSideContainer } from "../components/Container/RightSideContainer";
-import { Header } from "../components/Header/Header";
 import { LatestNews } from "../components/Sidebar/LatestNews/LatestNews";
 import { MarieAction } from "../components/Sidebar/MarieAction/MarieAction";
 import { Search } from "../components/Sidebar/Search/Search";
@@ -12,9 +9,7 @@ import { UsefulLinks } from "../components/Sidebar/UsefulLinks/UsefulLinks";
 import { ContentText } from "../components/UI/ContentText";
 import { List } from "../components/UI/List";
 import { ListItem } from "../components/UI/ListItem";
-import { SideBarTitle } from "../components/UI/SideBarTitle";
 import { TitleH1 } from "../components/UI/TitleH1";
-import { TitleH2 } from "../components/UI/TitleH2";
 import { TitleH3 } from "../components/UI/TitleH3";
 import styles from "../styles/Home.module.scss";
 

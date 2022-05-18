@@ -8,21 +8,27 @@ export const UsefulLinks = () => {
 
       <div className={styles["useful-links__content"]}>
         <a
+          rel="noreferrer"
           href="https://marie-sklodowska-curie-actions.ec.europa.eu/"
           target="_blank"
         >
           Marie Sklodowska-Curie
         </a>
-        <a href="https://www.efas.eu/en" target="_blank">
+        <a rel="noreferrer" href="https://www.efas.eu/en" target="_blank">
           EFAS
         </a>
-        <a href="https://www.copernicus.eu/en" target="_blank">
+        <a rel="noreferrer" href="https://www.copernicus.eu/en" target="_blank">
           Copernicus
         </a>
-        <a href="http://www.bandonfloodwarning.ie/" target="_blank">
+        <a
+          rel="noreferrer"
+          href="http://www.bandonfloodwarning.ie/"
+          target="_blank"
+        >
           Bandon FEWS
         </a>
         <a
+          rel="noreferrer"
           href="https://www.tidetimes.org.uk/kinsale-tide-times"
           target="_blank"
         >

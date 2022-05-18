@@ -10,7 +10,7 @@ export const IconBox: React.FC<iconBoxInterface> = ({ iconSrc, url }) => {
     backgroundSize: "100%",
   };
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
       <div className={styles["icon-box"]} style={iconBoxStyles}></div>
     </a>
   );

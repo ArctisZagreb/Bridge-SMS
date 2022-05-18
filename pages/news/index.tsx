@@ -17,8 +17,8 @@ const News = () => {
   return (
     <div className={styles["news"]}>
       <LeftSideContainer>
-        {NEWS.map((newsItem) => {
-          return <NewsItem itemData={newsItem} />;
+        {NEWS.map((newsItem, i) => {
+          return <NewsItem key={i} itemData={newsItem} />;
         })}
       </LeftSideContainer>
       <RightSideContainer>

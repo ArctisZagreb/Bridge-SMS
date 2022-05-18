@@ -77,6 +77,7 @@ export const Table: React.FC<tableComponent> = ({ tableDB }) => {
                       sort === null ? "top" : sort ? "top" : "bottom";
                     return (
                       <th
+                        key={i}
                         onClick={() => {
                           sortTableHandler(title, sortOrder, i);
                         }}
@@ -94,13 +95,13 @@ export const Table: React.FC<tableComponent> = ({ tableDB }) => {
                 </tr>
               </thead>
               <tbody className={styles["table-body"]}>
-                {tableData.data.map((trow) => {
+                {tableData.data.map((trow, i) => {
                   return (
-                    <tr className={styles["main-row"]}>
-                      {trow.map((tcell) => {
+                    <tr className={styles["main-row"]} key={i}>
+                      {trow.map((tcell, i) => {
                         if (typeof tcell === "string") {
                           return (
-                            <td>
+                            <td key={i}>
                               <span className={styles["top-left"]}>
                                 {tcell}
                               </span>
@@ -108,10 +109,10 @@ export const Table: React.FC<tableComponent> = ({ tableDB }) => {
                           );
                         } else {
                           return (
-                            <td>
-                              {tcell.map((cellData) => {
+                            <td key={i}>
+                              {tcell.map((cellData, i) => {
                                 return (
-                                  <tr>
+                                  <tr key={i}>
                                     <td>{cellData}</td>
                                   </tr>
                                 );

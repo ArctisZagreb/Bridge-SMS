@@ -8,8 +8,8 @@ export const LatestNews = () => {
     <div className={styles["latest-news"]}>
       <SideBarTitle>Latest News</SideBarTitle>
       <div className={styles["latest-news__news-list"]}>
-        {NEWS.map((newsItem) => {
-          return <NewsItem itemData={newsItem} />;
+        {NEWS.map((newsItem, i) => {
+          return <NewsItem key={i} itemData={newsItem} />;
         })}
       </div>
     </div>

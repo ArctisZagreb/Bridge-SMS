@@ -25,6 +25,7 @@ const Contact = () => {
         <TitleH1>Ask a researcher a question on</TitleH1>
         <div className={styles["social-icons"]}>
           <a
+            rel="noreferrer"
             target="_blank"
             className={styles["icon"]}
             href="https://www.facebook.com/BRIDGE.SMS.EU.FP7/"
@@ -32,6 +33,7 @@ const Contact = () => {
             <img src="/icons/default_facebook.png" alt="facebook icon" />
           </a>
           <a
+            rel="noreferrer"
             target="_blank"
             className={styles["icon"]}
             href="https://twitter.com/bridge_sms"
@@ -39,6 +41,7 @@ const Contact = () => {
             <img src="/icons/default_twitter.png" alt="twitter icon" />
           </a>
           <a
+            rel="noreferrer"
             className={styles["icon"]}
             target="_blank"
             href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fgroups%2FBridge-SMS-8337384%2Fabout&trk=login_reg_redirect"
