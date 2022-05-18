@@ -13,7 +13,6 @@ interface tableHeader {
   title: string;
   sort: null | boolean;
 }
-const newTableDataU = [{}];
 
 const tableDataa = {
   headers: ["Deliverable No.", "Deliverable Title", "Deliverable date"],
