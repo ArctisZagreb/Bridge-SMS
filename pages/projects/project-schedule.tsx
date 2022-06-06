@@ -13,7 +13,7 @@ const ProjectSchedule = () => {
         <TitleH3>Project Schedule</TitleH3>
         <div className={styles["image-container"]}>
           <img
-            src="/images/charts/project-schedule.png"
+            src="/images/charts/project-schedule.webp"
             alt="graph about project schedule"
           />
         </div>

@@ -12,7 +12,7 @@ const SupportingInstitutions = () => {
         <TitleH1>Supporting Institutions</TitleH1>
         <ImageContainer marginBottom={imageBottomMargin}>
           <img
-            src="/logos/individualLogos/Dublin_City_Council_Logo.png"
+            src="/logos/individualLogos/Dublin_City_Council_Logo.webp"
             alt="Dublin City Council logo"
           />
         </ImageContainer>
@@ -45,7 +45,7 @@ const SupportingInstitutions = () => {
         </ContentText>
         <ImageContainer marginTop={40} marginBottom={imageBottomMargin}>
           <img
-            src="/logos/individualLogos/DTTAS_logo.jpg"
+            src="/logos/individualLogos/DTTAS_logo.webp"
             alt="Department of Transport Ireland Logo"
           />
         </ImageContainer>
@@ -84,7 +84,7 @@ const SupportingInstitutions = () => {
         </ContentText>
         <ImageContainer marginTop={30} marginBottom={imageBottomMargin}>
           <img
-            src="/logos/individualLogos/Deltares_logo.png"
+            src="/logos/individualLogos/Deltares_logo.webp"
             alt="Deltares independent institute for applied research in the field of water and subsurface Logo"
           />
         </ImageContainer>

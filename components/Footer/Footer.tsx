@@ -30,7 +30,7 @@ export const Footer = () => {
           {" "}
           <img
             className={styles["third-img"]}
-            src="/logos/collaboratingInstitutions/logo-group.png"
+            src="/logos/collaboratingInstitutions/logo-group.webp"
             alt="Collaborating Institutions logos"
           />
         </div>

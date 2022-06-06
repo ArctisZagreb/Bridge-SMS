@@ -17,7 +17,7 @@ const ProjectPartners = () => {
         <ImageContainer marginBottom={imageMargin}>
           <TitleH1>University College Cork, MaREI</TitleH1>
           <img
-            src="/logos/individualLogos/cork.jpg"
+            src="/logos/individualLogos/cork.webp"
             alt="university college cork logo"
           />
         </ImageContainer>
@@ -50,7 +50,7 @@ const ProjectPartners = () => {
         <ImageContainer marginBottom={imageDescMargin}>
           <img
             style={{ width: "60%" }}
-            src="/logos/individualLogos/ucc-quad.jpg"
+            src="/logos/individualLogos/ucc-quad.webp"
             alt="ucc quad building"
           />
         </ImageContainer>
@@ -113,7 +113,7 @@ const ProjectPartners = () => {
         <ImageContainer marginBottom={imageMargin}>
           <TitleH1>Cork County Council</TitleH1>
           <img
-            src="/logos/individualLogos/ccc.jpg"
+            src="/logos/individualLogos/ccc.webp"
             alt="cork county council logo"
           />
         </ImageContainer>
@@ -150,7 +150,7 @@ const ProjectPartners = () => {
         <Margin marginBottom={articleMargin} />
         <ImageContainer marginBottom={imageMargin}>
           <TitleH1>ARCTIS d.o.o.</TitleH1>
-          <img src="/logos/individualLogos/arctis.jpg" alt="arctis logo" />
+          <img src="/logos/individualLogos/arctis.webp" alt="arctis logo" />
         </ImageContainer>
         <ContentText>
           ARCTIS was founded in late 2010, by its owner and director Hrvoje

@@ -18,7 +18,7 @@ const ProgramDescription = () => {
         <ImageContainer>
           <img
             style={{ width: "100%" }}
-            src="/images/MarieCurie.jpg"
+            src="/images/MarieCurie.webp"
             alt="Marie Curie fundation"
           />
         </ImageContainer>

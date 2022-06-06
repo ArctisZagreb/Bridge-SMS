@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <LeftSideContainer>
           <TitleH1>BRIDGE SMS Homepage</TitleH1>
           <div className={styles["image-container"]}>
-            <img src="./images/ManchBr2.jpg" />
+            <img src="./images/ManchBr2.webp" />
           </div>
           <div className={styles["header-image"]}></div>
           <ContentText>

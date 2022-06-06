@@ -12,7 +12,7 @@ export const MarieAction = () => {
           href="https://marie-sklodowska-curie-actions.ec.europa.eu/"
           target="_blank"
         >
-          <img src="./images/MarieCurie.jpg" />
+          <img src="./images/MarieCurie.webp" />
         </a>
         <ContentText>
           Marie Curie 7th Framework Programme funded Project (IAPP) call:

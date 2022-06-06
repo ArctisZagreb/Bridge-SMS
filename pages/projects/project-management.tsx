@@ -72,7 +72,7 @@ const ProjectManagement = () => {
         <div className={styles["image-container"]}>
           <img
             className={styles["full-width"]}
-            src="/images/charts/Management-and-Organisation-Structure.png"
+            src="/images/charts/Management-and-Organisation-Structure.webp"
             alt="Management and Organisation Structure"
           />
         </div>
@@ -80,7 +80,7 @@ const ProjectManagement = () => {
         <div className={styles["image-container"]}>
           <img
             className={styles["full-width"]}
-            src="/images/charts/consortium-core-skills.jpg"
+            src="/images/charts/consortium-core-skills.webp"
             alt="consortium core skills"
           />
         </div>
