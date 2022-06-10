@@ -19,3 +19,12 @@
   background-color: $secondary-300;
   padding: 0 0.4rem;
 }
+
+@media screen and (max-width: 462px) {
+  .right-side-container {
+    display: none;
+  }
+  .left-side-container {
+    width: 100%;
+  }
+}

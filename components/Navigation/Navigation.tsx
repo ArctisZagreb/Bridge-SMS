@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { DesktopNavigation } from "./desktopNavigation/DesktopNavigation";
+import { MobileNavigation } from "./mobileNavigation/MobileNavigation";
 import styles from "./Navigation.module.scss";
 import { navigationItems } from "./NavigationItems";
 export const Navigation = () => {
   const [navigationData, setNavigationData] = useState(navigationItems);
-  const router = useRouter();
-  console.log(router);
+  const [toggleMobile, setToggleMobile] = useState(false);
   const handleActiveNavigation = (id: number) => {
     const updatedNavigation = navigationData.map((n) => {
       if (n.id === id) {
@@ -23,40 +23,9 @@ export const Navigation = () => {
   };
 
   return (
-    <ul className={styles["navigation"]}>
-      {navigationData.map((item) => {
-        return (
-          <li
-            className={`${styles["navigation-item"]} ${
-              item.active && styles["active-item"]
-            }`}
-            key={item.id}
-            onClick={() => {
-              if (item.path === "#") return;
-              handleActiveNavigation(item.id);
-            }}
-          >
-            <Link href={item.path}>{item.name}</Link>
-            {item.subDomain && (
-              <ul className={styles["navigation__subdomain-container"]}>
-                {item.subDomain.map((subItem) => {
-                  return (
-                    <li
-                      key={subItem.id}
-                      onClick={() => {
-                        handleActiveNavigation(item.id);
-                      }}
-                      className={styles["subdomain-item"]}
-                    >
-                      <Link href={subItem.path}>{subItem.name}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-          </li>
-        );
-      })}
-    </ul>
+    <div className={styles["navigation-wrapper"]}>
+      <MobileNavigation />
+      <DesktopNavigation />
+    </div>
   );
 };
