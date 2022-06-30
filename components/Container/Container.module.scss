@@ -1,7 +1,9 @@
 @import "./../../styles/globals/COLORS.scss";
+@import "./../../styles/globals/BREAKPOINTS.scss";
 
 .container {
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 0.5rem;
   background-color: $secondary-300;
@@ -20,7 +22,7 @@
   padding: 0 0.4rem;
 }
 
-@media screen and (max-width: 462px) {
+@media screen and (max-width: $breakpoint-sm) {
   .right-side-container {
     display: none;
   }

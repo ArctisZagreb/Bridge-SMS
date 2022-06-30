@@ -12,6 +12,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Bridge SMS</title>
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta
           name="description"
           content="Intelligent Bridge Assessment Maintenance and Management System"
         />

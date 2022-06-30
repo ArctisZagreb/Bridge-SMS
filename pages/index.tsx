@@ -103,6 +103,7 @@ const Home: NextPage = () => {
             is shown in the map below.
           </ContentText>
           <iframe
+            className={styles["iframe"]}
             src="https://www.google.com/maps/d/embed?mid=1hK52rdY_yh2DFy04l07ho-14vMQU-oVQ&ehbc=2E312F"
             width="640"
             height="480"
