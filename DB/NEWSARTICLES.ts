@@ -1,7 +1,25 @@
-export const NEWSARTICLES = [
+export interface IArticleElement {
+  elementType: string;
+  content?: string;
+  linkText?: string;
+  path?: string;
+  elementContent?: string;
+  images?: any[];
+  url?: string;
+  description?: string;
+}
+export interface INewsArticles {
+  id: number;
+  title: string;
+  published: string;
+  author: string;
+  shortDescription: string;
+  articleElements: IArticleElement[];
+}
+export const NEWSARTICLES: INewsArticles[] = [
   {
     id: 0,
-    title: "BRIDGE SMS Project – CORDIS arcticle “Results in Brief”",
+    title: 'BRIDGE SMS Project – CORDIS arcticle "Results in Brief"',
     published: "2019-05-28",
     author: "Tin Kulic",
     shortDescription:
@@ -251,7 +269,7 @@ export const NEWSARTICLES = [
     published: "2018-01-26",
     author: "Tin Kulic",
     shortDescription:
-      "UNIZAG was invited to give a talk at the ‘ARCHIBUS‘ workshop",
+      'UNIZAG was invited to give a talk at the "ARCHIBUS" workshop',
     articleElements: [
       {
         elementType: "imageGallery",
@@ -1405,180 +1423,28 @@ export const NEWSARTICLES = [
       },
     ],
   },
-  {
-    id: 55,
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: 56,
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: 57,
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: 58,
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: 59,
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: "",
-    title: "",
-    published: "2018-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: "",
-    title: "",
-    published: "2019-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
-  {
-    id: "",
-    title: "",
-    published: "2019-05-28",
-    author: "",
-    shortDescription: "",
-    articleElements: [
-      {
-        elementType: "text",
-        content: "",
-      },
-      {
-        elementType: "imageGallery",
-        images: [
-          { url: "1", description: "" },
-          { url: "2", description: "" },
-          { url: "3", description: "" },
-        ],
-      },
-      { elementType: "linkText", content: "", linkText: "", path: "" },
-    ],
-  },
 ];
+
+const notFoundNews = {
+  id: 999,
+  title: "Article Not Found",
+  published: "",
+  author: "",
+  shortDescription: "",
+  articleElements: [],
+};
+//Removing quotations from string
+const removeQuotes = (stringOfChar: string): string =>
+  stringOfChar.replaceAll(/'|"|“/g, "");
+
+export const getNewsByTitle = (title: string): INewsArticles => {
+  const foundNews = NEWSARTICLES.find((n) => {
+    //Removing quotes from string for comparing purpose
+    //-if quote is last char it is removed when using article title as path
+    return removeQuotes(n.title) === removeQuotes(title);
+  });
+
+  if (foundNews === undefined) return notFoundNews;
+
+  return foundNews;
+};

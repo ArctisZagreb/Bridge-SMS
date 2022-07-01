@@ -13,6 +13,7 @@ export const DesktopNavigation = () => {
       }
       return n;
     });
+    setNavigationData(updatedNavigation);
   };
 
   return (
@@ -30,7 +31,7 @@ export const DesktopNavigation = () => {
             }}
           >
             <Link href={item.path}>{item.name}</Link>
-            {item.subDomain && (
+            {item.subDomain.length > 0 && (
               <ul className={styles["navigation__subdomain-container"]}>
                 {item.subDomain.map((subItem) => {
                   return (

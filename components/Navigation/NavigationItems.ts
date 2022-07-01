@@ -3,7 +3,7 @@ interface navItem {
   path: string;
   name: string;
   active: boolean;
-  subDomain?: navItem[];
+  subDomain: navItem[];
 }
 
 export const navigationItems: navItem[] = [
@@ -12,12 +12,14 @@ export const navigationItems: navItem[] = [
     path: "/",
     name: "Home",
     active: true,
+    subDomain: [],
   },
   {
     id: 1,
     path: "/news",
     name: "News & Events",
     active: false,
+    subDomain: [],
   },
   {
     id: 2,
@@ -30,24 +32,28 @@ export const navigationItems: navItem[] = [
         path: "/projects/project-schedule",
         name: "Project Schedule",
         active: false,
+        subDomain: [],
       },
       {
         id: 1,
         path: "/projects/objectives-goals",
         name: "Objectives & Goals",
         active: false,
+        subDomain: [],
       },
       {
         id: 2,
         path: "/projects/deliverables-milestones",
         name: "Deliverables & Milestones",
         active: false,
+        subDomain: [],
       },
       {
         id: 3,
         path: "/projects/project-management",
         name: "Project Management",
         active: false,
+        subDomain: [],
       },
     ],
   },
@@ -62,6 +68,7 @@ export const navigationItems: navItem[] = [
         path: "/fp7/program-description",
         name: "Program Description",
         active: false,
+        subDomain: [],
       },
     ],
   },
@@ -76,12 +83,14 @@ export const navigationItems: navItem[] = [
         path: "/consortium/project-partners",
         name: "Project Partners",
         active: false,
+        subDomain: [],
       },
       {
         id: 1,
         path: "/consortium/researchers",
         name: "Researchers",
         active: false,
+        subDomain: [],
       },
     ],
   },
@@ -96,12 +105,14 @@ export const navigationItems: navItem[] = [
         path: "/collaboration/supporting-institutions",
         name: "Supporting Institutions",
         active: false,
+        subDomain: [],
       },
       {
         id: 1,
         path: "/collaboration/collaborating-institutions",
         name: "Collaborating Institutions",
         active: false,
+        subDomain: [],
       },
     ],
   },
@@ -116,18 +127,21 @@ export const navigationItems: navItem[] = [
         path: "/publications/project-deliverables",
         name: "Project Deliverables",
         active: false,
+        subDomain: [],
       },
       {
         id: 1,
         path: "/publications/peer-reviewed-publications",
         name: "Peer-Reviewed Publications",
         active: false,
+        subDomain: [],
       },
       {
         id: 2,
         path: "/publications/outreach-materials",
         name: "Outreach Materials",
         active: false,
+        subDomain: [],
       },
     ],
   },
@@ -136,5 +150,6 @@ export const navigationItems: navItem[] = [
     path: "/contact",
     name: "Contact",
     active: false,
+    subDomain: [],
   },
 ];

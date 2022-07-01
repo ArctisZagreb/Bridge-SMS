@@ -6,12 +6,6 @@
   display: none;
 }
 
-.intro-enter {
-  opacity: 0;
-}
-.intro-enter-active {
-  opacity: 1;
-}
 .button {
   padding: 0;
   width: 50px;
@@ -24,10 +18,10 @@
   outline: 0;
   font-size: 33px;
   transition: color 200ms linear;
-}
 
-.button:hover {
-  color: #2196f3;
+  &:hover {
+    color: #2196f3;
+  }
 }
 
 .nav {
