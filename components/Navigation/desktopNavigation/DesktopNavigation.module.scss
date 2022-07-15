@@ -1,5 +1,6 @@
 @import "./../../../styles/globals/COLORS.scss";
 @import "./../../../styles/globals/FONTS.scss";
+@import "./../../../styles/globals/BREAKPOINTS.scss";
 
 .navigation {
   margin-bottom: 0;
@@ -87,7 +88,7 @@
   color: $font-primary;
 }
 
-@media screen and (max-width: 462px) {
+@media screen and (max-width: $breakpoint-sm) {
   .navigation {
     display: none;
   }

@@ -18,9 +18,9 @@ const NewsArticle: React.FC<INewsArticle> = ({ dataProps }) => {
   return (
     <div>
       <h1>{dataProps.title}</h1>
-      {dataProps.articleElements.map((element: IArticleElement) => {
+      {dataProps.articleElements.map((element: IArticleElement, i) => {
         if (element.elementType === "text") {
-          return <p>{element.content}</p>;
+          return <p key={i}>{element.content}</p>;
         }
       })}
     </div>
