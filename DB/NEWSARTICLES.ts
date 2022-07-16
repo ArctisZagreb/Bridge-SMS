@@ -19,7 +19,7 @@ export interface INewsArticles {
 export const NEWSARTICLES: INewsArticles[] = [
   {
     id: 0,
-    title: 'BRIDGE SMS Project – CORDIS arcticle "Results in Brief"',
+    title: "BRIDGE SMS Project – CORDIS arcticle - Results in Brief",
     published: "2019-05-28",
     author: "Tin Kulic",
     shortDescription:
@@ -1435,7 +1435,7 @@ const notFoundNews = {
 };
 //Removing quotations from string
 const removeQuotes = (stringOfChar: string): string =>
-  stringOfChar.replaceAll(/'|"|“/g, "");
+  stringOfChar.replace(/'|"|“/g, "");
 
 export const getNewsByTitle = (title: string): INewsArticles => {
   const foundNews = NEWSARTICLES.find((n) => {
